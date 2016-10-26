@@ -16,13 +16,13 @@
 10. Поменять название скопированного файла с  CommonSettings.props.example на  CommonSettings (шаг 9-10 можно посмотреть на видео https://www.youtube.com/watch?v=nrzAF2sxHHM&spfreload=1)
 11. Открыть при помощи NotePad файл CommonSettings
 12. Заменить в CommonSettings несколько строк
-- До:
+     - До:
   <UseCuDNN>true</UseCuDNN>
  <PythonSupport>false</PythonSupport>
  <CudaArchitecture>compute_35,sm_35;compute_52,sm_52</CudaArchitecture>
  <CuDnnPath></CuDnnPath>
  <PythonDir>C:\Miniconda2\</PythonDir>
-- После:
+    - После:
  <UseCuDNN>false</UseCuDNN>
  <PythonSupport>true</PythonSupport>
  <CudaArchitecture>compute_30,sm_30;compute_52,sm_52</CudaArchitecture> (нужно устанавливать в зависимости от capability видеокарты)
@@ -49,16 +49,16 @@
 #Применение библиотеки caffe для распознавания изображений из небольшого набора данных с помощью дообучения (fine-tuning) заранее обученной глубокой нейронной сети.
 
 1. Подготовка данных
-- скачиваем данные
-- преобразуем данные в формат lmdb (используемый caffe)
-- разделяем данные на две выборки: обучающую и валидационную ( train_lmdb and validation_lmbd)
-- генерируем mean image
+   - скачиваем данные
+   - преобразуем данные в формат lmdb (используемый caffe)
+   - разделяем данные на две выборки: обучающую и валидационную ( train_lmdb and validation_lmbd)
+   - генерируем mean image
 2. Изменяем данные в модели. В работе будет использовать модель bvlc_reference_caffenet prototxt file, которая является модификацией модели AlexNet
-- Изменить путь к входным данным (строки:24,40,51)
-- В 373 строке изменить количество входных классов на 101
+   - Изменить путь к входным данным (строки:24,40,51)
+   - В 373 строке изменить количество входных классов на 101
 3. Запустить solver (у файла solver.prototext) изменить пути  к входным данным
 4. Обучаем модель (запуск train.prototext)
 5. Запускаем обученную модель на новых данных (val.prototext)
-Для этого удалим данные слоев, изменим названия слоев и изменим последний тип слоя с SoftmaxWithLoss на Softmax.
+   - Для этого удалим данные слоев, изменим названия слоев и изменим последний тип слоя с SoftmaxWithLoss на Softmax.
 
  
