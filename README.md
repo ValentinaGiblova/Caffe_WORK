@@ -9,8 +9,8 @@
 5. Скачать и установить Python 27 https://www.python.org/downloads/
 6. Скачать Miniconda для Python 27 и установить http://conda.pydata.org/miniconda.html
 7. Установить пакеты в Anaconda Prompt при помощи команд
-- conda install --yes numpy scipy matplotlib scikit-image pip
-- conda install -c conda-forge protobuf=3.0.0
+    - conda install --yes numpy scipy matplotlib scikit-image pip
+    - conda install -c conda-forge protobuf=3.0.0
 8. Разархивировать framework caffe
 9. В полученной папке caffe скопировать и вставить файл CommonSettings.props.example (файл лежит caffe_root/caffe/windows)
 10. Поменять название скопированного файла с  CommonSettings.props.example на  CommonSettings (шаг 9-10 можно посмотреть на видео https://www.youtube.com/watch?v=nrzAF2sxHHM&spfreload=1)
