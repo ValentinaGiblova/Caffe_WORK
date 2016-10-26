@@ -18,13 +18,13 @@
 12. Заменить в CommonSettings несколько строк
      - До:
       - \<UseCuDNN>true\</UseCuDNN>
- <PythonSupport>false</PythonSupport>
- <CudaArchitecture>compute_35,sm_35;compute_52,sm_52</CudaArchitecture>
- <CuDnnPath></CuDnnPath>
- <PythonDir>C:\Miniconda2\</PythonDir>
+      - \<PythonSupport>false\</PythonSupport>
+      - \<CudaArchitecture>compute_35,sm_35;compute_52,sm_52\</CudaArchitecture>
+      - \<CuDnnPath>\</CuDnnPath>
+      - \<PythonDir>C:\Miniconda2\\\</PythonDir>
     - После:
- <UseCuDNN>false</UseCuDNN>
- <PythonSupport>true</PythonSupport>
+      - \<UseCuDNN>false\</UseCuDNN>
+      - \<PythonSupport>true\</PythonSupport>
  <CudaArchitecture>compute_30,sm_30;compute_52,sm_52</CudaArchitecture> (нужно устанавливать в зависимости от capability видеокарты)
  <CuDnnPath>$(SolutionDir)\..</CuDnnPath> (скаченный файл из шага 3 нужно разархивировать и положить  caffe_root/caffe/windows - где лежит и сам файл CommonSettings )
  <PythonDir>C:\Users\nasedkina\Anaconda2\</PythonDir> (пропишите путь до корневой папки Miniconda, где хранятся все пакеты для Miniconda) (будьте внимательны со слешами)
