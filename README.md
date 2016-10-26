@@ -25,9 +25,9 @@
     - После:
       - \<UseCuDNN>false\</UseCuDNN>
       - \<PythonSupport>true\</PythonSupport>
- <CudaArchitecture>compute_30,sm_30;compute_52,sm_52</CudaArchitecture> (нужно устанавливать в зависимости от capability видеокарты)
- <CuDnnPath>$(SolutionDir)\..</CuDnnPath> (скаченный файл из шага 3 нужно разархивировать и положить  caffe_root/caffe/windows - где лежит и сам файл CommonSettings )
- <PythonDir>C:\Users\nasedkina\Anaconda2\</PythonDir> (пропишите путь до корневой папки Miniconda, где хранятся все пакеты для Miniconda) (будьте внимательны со слешами)
+      - \<CudaArchitecture>compute_30,sm_30;compute_52,sm_52\</CudaArchitecture> (нужно устанавливать в зависимости от capability видеокарты)
+      - \<CuDnnPath>$(SolutionDir)\..\</CuDnnPath> (скаченный файл из шага 3 нужно разархивировать и положить  caffe_root/caffe/windows - где лежит и сам файл CommonSettings )
+      - \<PythonDir>C:\Users\nasedkina\Anaconda2\\\</PythonDir> (пропишите путь до корневой папки Miniconda, где хранятся все пакеты для Miniconda) (будьте внимательны со слешами)
 13. При помощи VS 2013 открыть файл Caffe.sln
 14. Проверить, что произошла загрузка всех проектов
 15. Правой кнопкой мыши нажать на Solution Caffe и выбрать Manage NuGet Packages for Solution
