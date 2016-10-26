@@ -2,7 +2,7 @@
 
 # Рекомендации по установки библиотеки caffe на Windows (64 bits)
 
-Скачать и установить Visual Studio 2013 (английский язык) [example site] https://www.microsoft.com/ru-ru/download/details.aspx?id=44914
+Скачать и установить Visual Studio 2013 (английский язык) [example site]:https://www.microsoft.com/ru-ru/download/details.aspx?id=44914
 Скачать и установить CUDA 7.5 https://developer.nvidia.com/cuda-75-downloads-archive
 Скачать CUDA® Deep Neural Network library (cuDNN) для 7.5 https://developer.nvidia.com/cudnn
 Скачать framework с github  - caffe https://github.com/BVLC/caffe/tree/windows
