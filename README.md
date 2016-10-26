@@ -17,7 +17,7 @@
 11. Открыть при помощи NotePad файл CommonSettings
 12. Заменить в CommonSettings несколько строк
      - До:
-      - <UseCuDNN>true</UseCuDNN>
+      - \<UseCuDNN>true\</UseCuDNN>
  <PythonSupport>false</PythonSupport>
  <CudaArchitecture>compute_35,sm_35;compute_52,sm_52</CudaArchitecture>
  <CuDnnPath></CuDnnPath>
